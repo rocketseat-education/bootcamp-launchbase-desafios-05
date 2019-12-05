@@ -2,56 +2,68 @@
 
 Nesse desafio você irá criar um banco de dados para o Foodfy.
 
-Você irá manter o padrão que vinha utilizando no Foodfy, e adicionar essa funcionalidade de cadastro de dados em um banco de dados Postgres.
+A partir desse desafio, os dados que antes você vinha salvando em um arquivo JSON agora serão armazenados em um banco de dados PostgreSQL.
 
-Você irá criar novas páginas de cadastro de chefs, pois uma receita será atribuida a um chef.
+Você irá criar novas páginas de cadastro, listagem e edição de chefs, pois uma receita será atribuida a um chef.
 
-Você irá criar filtro de receitas, onde você poderá buscar por determinada receita.
+Você irá criar um busca de receitas, onde você poderá filtrar receitas pelo seu nome.
 
-Por fim, você irá adicionar as funcionalidade de paginação na listagem de receitas.
+Por fim, você irá adicionar a funcionalidade de paginação na listagem de receitas.
 
-## Banco de Dados e SQL
+## 🗄 Banco de dados
 
-Usando os conhecimentos adquiridos até aqui, você irá criar um banco de dados pelo Postgres. Coloque o nome `foodfy`. 
+Usando os conhecimentos adquiridos até aqui, você irá criar um banco de dados pelo Postgres, utilize o nome `foodfy`. 
 
-Você irá criar uma tabela de receitas. Chame-a de `receipts`. E uma tabela de cozinheiros. Nomei-a como `chefs`. 
+Você irá criar uma tabela de receitas, chame-a de `receipts` e uma tabela de cozinheiros, nomei-a como `chefs`.
 
-Os campos (`colunas`) da tabela `receipts` serão os mesmos que você está usando até o momento. Adicione também, uma coluna de data de criação `created_at`, pois você irá posteriormente ordernar a apresentação das receitas por data de cadastro.
+A tabela `receipts` deverá conter os seguintes campos:
+
+* `id integer primary unique` (o postbird cria esse campo por padrão)
+* `chef_id integer` (esse campo armazenará o ID do chef que criou essa receita)
+* `image text`
+* `title text`
+* `ingredients text[]`
+* `preparation text[]`
+* `information text`
+* `created_at datetime` (armazena a data de criação da receita no banco de dados)
+
+*Obs.: Você consegue armazenar vetores (`arrays`) no Postgres utilizando o `[]` no fim do campo.*
 
 A tabela `chefs` deverá conter os seguinte campos:
 
 * `id integer primary unique` (o postbird cria esse campo por padrão)
 * `name text`
 * `avatar_url text`
-* `created_at datetime`
-* `receipt_id integer`
+* `created_at datetime` (armazena a data de criação do chef no banco de dados)
 
-## Cadastro de Chefs
+## 🍴 [Admin] Cadastro de chefs
 
 Você irá colocar novas páginas administrativas que serão capazes de fazer as operação de cadastro, listagem, atualização e remoção de chefs.
 
-[Veja o layout das páginas](layouts/)
+**Download dos arquivos:** https://github.com/Rocketseat/bootcamp-launchbase-desafios-05/archive/master.zip
 
->Importante: Quando for remover um `chef` você precisa verificar se existem receitas cadastradas para aquele Chef. Você só poderá remover o `chef` se houver uma confirmação de remoção das receitas que foram atribuidas a esse chefe.
+Acesse o arquivo `layouts/admin/index.html` para ver todas especificações do layout do site.
 
-## Relacionamento
+>Importante: Quando um chef for removido, se o mesmo possuir pelo menos uma receita, retorne um erro informando que chefs que possuem receitas não podem ser deletados.
 
-Fazer uma página especial no site, onde irá mostrar os chefs do Foodfy.
+## 🕵🏻‍♂️ [Site] Busca de receitas
 
-[Veja o layout das páginas](layouts/)
+Para facilitar a busca de uma receita cadastrada, a pessoa que acessar o site poderá filtrar por nome da receita.
+
+Você criará também uma página de resultado da busca que listará as receitas de acordo com a busca do usuário.
+
+**Download dos arquivos:** https://github.com/Rocketseat/bootcamp-launchbase-desafios-05/archive/master.zip
+
+Acesse o arquivo `layouts/site/index.html` para ver todas especificações do layout do site.
+
+
+## 👩🏽‍🍳 [Site] Listagem de chefs
+
+Fazer uma página com nome "Chefs" no site onde irá mostrar os chefs do Foodfy.
 
 Fazer uma contagem de todas a receitas daquele chef, e apresentar nessa página.
 
-## Filtro e Pesquisa
+**Download dos arquivos:** https://github.com/Rocketseat/bootcamp-launchbase-desafios-05/archive/master.zip
 
-Para facilitar a busca de uma receita cadastrada, a pessoa que acessar o site poderá filtrar por nome da receita ou por ingredientes.
+Acesse o arquivo `layouts/site/index.html` para ver todas especificações do layout do site.
 
-[Veja o layout da página](layouts/)
-
-## Paginação
-
-Crie uma paginação para a parte de listagem receitas apresentadas no site.
-
-Use uma paginação estilo ` < ANTERIOR | PRÓXIMA >`
-
-Dica: Incremente `page++` ou Decremente `page--` a página atual.
