@@ -28,6 +28,10 @@
 
 ## :rocket: Desafios
 
+- [Refatorando aplicação e configurando o BD](desafios/05-1-refatorando-aplicacao.md)
+- [Interagindo com o BD](desafios/05-2-interagindo-bd.md)
+- [Relacionamentos e filtros no BD](desafios/05-3-relacionamentos-filtros-bd.md)
+- [Paginação de resultados no BD](desafios/05-4-paginacao-bd.md)
 - [Persistindo dados no Foodfy](desafios/05-persistindo-dados-foodfy.md)
 
 ## :calendar: Entrega
