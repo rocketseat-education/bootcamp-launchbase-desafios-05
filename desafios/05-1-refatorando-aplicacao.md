@@ -36,7 +36,8 @@ Nessa etapa, você deve refatorar o código da sua aplicação e preparar o seu 
 
 Utilizando a ferramenta postbird, crie **através de queries** um banco de dados chamado **myTeacher** e uma tabela com o nome de **teachers** que possua os seguintes campos:
 
-- name: INT e PRIMARY KEY;
+- id: INT e PRIMARY KEY;
+- name: TEXT e NOT NULL;
 - birthDate: TIMESTAMP e NOT NULL;
 - educationLevel: TEXT e NOT NULL;
 - classType: TEXT e NOT NULL;
