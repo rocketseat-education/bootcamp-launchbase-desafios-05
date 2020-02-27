@@ -34,14 +34,14 @@ Nessa etapa, você deve refatorar o código da sua aplicação e preparar o seu 
 
 ### Criando Banco de dados
 
-Utilizando a ferramenta postbird, crie **através de queries** um banco de dados chamado **myTeacher** e uma tabela com o nome de **teachers** que possua os seguintes campos:
+Utilizando a ferramenta postbird, crie **através de queries** um banco de dados chamado **my_teacher** e uma tabela com o nome de **teachers** que possua os seguintes campos:
 
 - id: INT e PRIMARY KEY;
 - name: TEXT e NOT NULL;
-- birthDate: TIMESTAMP e NOT NULL;
-- educationLevel: TEXT e NOT NULL;
-- classType: TEXT e NOT NULL;
-- subjectsTaught: TEXT e NOT NULL;
+- birth_date: TIMESTAMP e NOT NULL;
+- education_level: TEXT e NOT NULL;
+- class_type: TEXT e NOT NULL;
+- subjects_taught: TEXT e NOT NULL;
 - created_at: TIMESTAMP e NOT NULL.
 
 _Dicas: Para criar a tabela a partir de uma query, basta selecionar o banco no postbird e na aba **Query** rodar o comando **CREATE TABLE** espeficando o nome da tabela e em seguida as colunas, por exemplo:_
