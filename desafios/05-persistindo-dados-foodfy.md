@@ -42,9 +42,9 @@ Por fim, você irá adicionar a funcionalidade de paginação na listagem de rec
 
 Usando os conhecimentos adquiridos até aqui, você irá criar um banco de dados pelo Postgres, utilize o nome `foodfy`.
 
-Você irá criar uma tabela de receitas, chame-a de `receipts` e uma tabela de cozinheiros, nomei-a como `chefs`.
+Você irá criar uma tabela de receitas, chame-a de `recipes` e uma tabela de cozinheiros, nomei-a como `chefs`.
 
-A tabela `receipts` deverá conter os seguintes campos:
+A tabela `recipes` deverá conter os seguintes campos:
 
 - `id integer primary unique` (o postbird cria esse campo por padrão)
 - `chef_id integer` (esse campo armazenará o ID do chef que criou essa receita)
