@@ -40,11 +40,13 @@ No método `index`, construa uma query usando `SELECT` que retorne todos os regi
 
 ### Criando Model
 
-As operações com o banco de dados não devem ficar no controller, por isso crie um model que contenha os três métodos:
+As operações com o banco de dados não devem ficar no controller, por isso crie um model que contenha os cinco métodos:
 
 - `all`: Buscar todos os registros;
 - `create`: Criar um registro;
 - `find`: Buscar apenas um registro a partir do id informado;
+- `update`: Atualiza um registro a partir do id informado;
+- `delete`: Remove um registro a partir do id informado;
 
 ### Atualizando dados
 
