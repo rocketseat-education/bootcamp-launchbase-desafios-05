@@ -76,7 +76,7 @@ Você irá colocar novas páginas administrativas que serão capazes de fazer as
 
 Acesse o arquivo `layouts/admin/index.html` para ver todas especificações do layout do site.
 
-> Importante: Quando um chef for removido, se o mesmo possuir pelo menos uma receita, retorne um erro informando que chefs que possuem receitas não podem ser deletados.
+> Importante: Ao deletar o chef, se o mesmo possuir pelo menos uma receita, retorne um erro informando que chefs que possuem receitas não podem ser deletados.
 
 ### :detective: [Site] Busca de receitas
 
