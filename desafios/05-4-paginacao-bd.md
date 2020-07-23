@@ -42,7 +42,7 @@ Crie um algoritmo que realize a paginação dos resultados da seguinte forma:
 - Caso existam mais de 7 páginas, as intermediárias selecionadas devem ser apresentadas juntamente com seu sucessor e antecessor (ex.: 1, 2, ..., 12, 13 (selecionada), 14, ..., 23, 24);
 - Só apresente as reticências se elas representarem um grupo de 2 páginas ou mais (ex.: 1, 2, 3 (sem reticências), 4, 5 (selecionada), 6, ...(pags 7 e 8), 9, 10).
 
-Em seguida, implemente na query do método `paginate` no model de professor a lógica da páginação:
+Em seguida, implemente na query do método `paginate` no model de professor a lógica da paginação:
 
 - realizar o `count` de todos os registros de professores (utilize uma `subquery`);
 - aplicar os filtros tanto na `query` de busca dos professores quanto na `subquery` de `count`.
