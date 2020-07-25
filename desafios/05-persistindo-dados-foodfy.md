@@ -32,7 +32,7 @@ Nesse desafio você irá criar um banco de dados para o Foodfy.
 
 A partir desse desafio, os dados que antes você vinha salvando em um arquivo JSON agora serão armazenados em um banco de dados PostgreSQL.
 
-Você irá criar novas páginas de cadastro, listagem e edição de chefs, pois uma receita será atribuida a um chef.
+Você irá criar novas páginas de cadastro, listagem e edição de chefs, pois uma receita será atribuída a um chef.
 
 Você irá criar um busca de receitas, onde você poderá filtrar receitas pelo seu nome.
 
@@ -42,7 +42,7 @@ Por fim, você irá adicionar a funcionalidade de paginação na listagem de rec
 
 Usando os conhecimentos adquiridos até aqui, você irá criar um banco de dados pelo Postgres, utilize o nome `foodfy`.
 
-Você irá criar uma tabela de receitas, chame-a de `recipes` e uma tabela de cozinheiros, nomei-a como `chefs`.
+Você irá criar uma tabela de receitas, chame-a de `recipes` e uma tabela de cozinheiros, nomeie-a como `chefs`.
 
 A tabela `recipes` deverá conter os seguintes campos:
 

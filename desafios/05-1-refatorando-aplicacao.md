@@ -45,7 +45,7 @@ Utilizando a ferramenta postbird, crie **através de queries** um banco de dados
 - subjects_taught: TEXT e NOT NULL;
 - created_at: TIMESTAMP e NOT NULL.
 
-_Dicas: Para criar a tabela a partir de uma query, basta selecionar o banco no postbird e na aba **Query** rodar o comando **CREATE TABLE** espeficando o nome da tabela e em seguida as colunas, por exemplo:_
+_Dicas: Para criar a tabela a partir de uma query, basta selecionar o banco no postbird e na aba **Query** rodar o comando **CREATE TABLE** especificando o nome da tabela e em seguida as colunas, por exemplo:_
 
 ```sql
 CREATE TABLE TEST(
