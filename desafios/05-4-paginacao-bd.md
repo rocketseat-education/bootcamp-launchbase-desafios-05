@@ -39,7 +39,7 @@ Adicione no método `index` do controller de professores o tratamento dos campos
 Crie um algoritmo que realize a paginação dos resultados da seguinte forma:
 
 - As duas primeiras e últimas páginas sempre devem ser apresentadas (ex: 1, 2, 45 e 46 de um total de 46 pags.);
-- Caso existam mais de 7 páginas, as intermediárias selecionadas devem ser apresentadas juntamente com seu sucessor e antecessor (ex.: 1, 2, ..., 12, 13 (selecionada), 14, ..., 23, 24);
+- Caso existam mais de 7 páginas, as intermediárias selecionadas devem ser apresentadas juntamente com seu sucessor e antecessor (ex.: 1, 2, ..., 13 (selecionada), 14, ..., 23, 24);
 - Só apresente as reticências se elas representarem um grupo de 2 páginas ou mais (ex.: 1, 2, 3 (sem reticências), 4, 5 (selecionada), 6, ...(pags 7 e 8), 9, 10).
 
 Em seguida, implemente na query do método `paginate` no model de professor a lógica da paginação:
