@@ -48,6 +48,10 @@ As operações com o banco de dados não devem ficar no controller, por isso cri
 - `update`: Atualiza um registro a partir do id informado;
 - `delete`: Remove um registro a partir do id informado;
 
+### Buscando por um registro
+
+Crie um método `find` no model. Nesse método, construa uma query utilizando `SELECT`, `FROM` e `WHERE` para encontrar apenas um registro no banco de dados a partir do id informado.
+
 ### Atualizando dados
 
 Crie um método `update` no model. Nesse método, construa uma query utilizando `UPDATE`, `SET` e `WHERE` que atualiza um registro do banco de dados a partir do id informado.
